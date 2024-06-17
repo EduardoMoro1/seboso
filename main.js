@@ -1,45 +1,91 @@
-const abaPrincipal = document.querySelector(".aba-principal");
-const abaPerguntas = document.querySelector(".aba-perguntas");
-const abaAlternativas = document.querySelector(".aba-alternativas");
-const abaResultado = document.querySelector(".aba-resultado");
+const caixaPrincipal = document.querySelector(".caixa-principal");
+const caixaPerguntas = document.querySelector(".caixa-perguntas");
+const caixaAlternativas = document.querySelector(".caixa-alternativas");
+const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Supondo que você seja um agricultor de subsistência, qual seria sua primeira ação para o benefício mútuo entre sua economia e o meio ambiente?",
+        enunciado: "enunciado 1",
         alternativas: [
-            "Fazer uso de uma composteira para a decomposição de certos resíduos orgânicos",
-            "Fazer uso da reciclagem para evitar o acúmulo de resíduos que possivelmente trarão prejuízo ao meio ambiente",
+        {
+            texto: "a",
+            afirmacao: "afirmação",
+        },
+        {
+            texto: "b",
+            afirmacao: "afirmação",
+        }        
+        ]
+    },
+    {
+        enunciado: "enunciado 2",
+        alternativas: [
+        {
+            texto: "a",
+            afirmacao: "afirmação",
+        },
+        {
+            texto: "b",
+            afirmacao: "afirmação",
+        }        
+        ]
+    },
+    {
+        enunciado: "enunciado 3",
+        alternativas: [
+        {
+            texto: "a",
+            afirmacao: "afirmação",
+        },
+        {
+            texto: "b",
+            afirmacao: "afirmação",
+        }        
+        ]
+    },
+    {
+        enunciado: "enunciado 4",
+        alternativas: [
+        {
+            texto: "a",
+                afirmacao: "afirmação",
+        },
+        {
+            texto: "b",
+                afirmacao: "afirmação",
+        }        
+        ]
+    },
+    {
+        enunciado: "enunciado 5",
+        alternativas: [
+        {
+            texto: "a",
+            afirmacao: "afirmação",
+        },
+        {
+            texto: "b",
+            afirmacao: "afirmação",
+            }        
+        ]
+    },
+];
 
-        ]
-    },
-    {
-        enunciado: "Considerando todos os fatores, você deve optar por uma alternativa menos prejudicial ao meio ambiente, você optaria por:",
-        alternativas: [
-            "Agropecuária",
-            "Agricultura",
+let atual = 0;
+let perguntaAtual;
 
-        ]
-    },
-    {
-        enunciado: "Pergunta 3",
-        alternativas: [
-            "Alternativa 1",
-            "Alternativa 2",
-        ]
-    },
-    {
-        enunciado: "Pergunta 4",
-        alternativas: [
-            "Alternativa 1",
-            "Alternativa 2",
-        ]
-    },
-    {
-        enunciado: "Pergunta 5",
-        alternativas: [
-            "Alternativa 1",
-            "Alternativa 2",
-        ]
+function mostraPergunta() {
+    perguntaAtual = perguntas[atual];
+    caixaPerguntas.textContent = perguntaAtual.enunciado;
+    mostraAlternativas();
+}
+function mostraAlternativas() {
+    for(const alternativa of perguntaAtual.alternativas) {
+        const botaoAlternativas = document.createElement("button");
+        botaoAlternativas.textContent = alternativa.texto;
+        caixaAlternativas.appendChild(botaoAlternativas);
     }
-]; 
+}
+
+mostraPergunta();
