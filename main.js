@@ -6,70 +6,45 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "enunciado 1",
+        enunciado: "Numa situação hipotética, você está vivendo em uma pequena fazenda, qual será sua primeira ação:",
         alternativas: [
         {
-            texto: "a",
+            texto: "Plantar vegetais para vender ou comer posteriormente",
             afirmacao: "afirmação",
         },
         {
-            texto: "b",
+            texto: "Separar o espaço para o cultivo de animais",
             afirmacao: "afirmação",
         }        
         ]
     },
     {
-        enunciado: "enunciado 2",
+        enunciado: "Com seu território em mãos, você optaria por uso de agrotóxicos e outros produtos químicos?",
         alternativas: [
         {
-            texto: "a",
+            texto: "sim",
             afirmacao: "afirmação",
         },
         {
-            texto: "b",
+            texto: "não",
             afirmacao: "afirmação",
         }        
         ]
     },
     {
-        enunciado: "enunciado 3",
+        enunciado: "Você optaria por introduzir máquinas na sua fazenda ou fará tudo manualmente?",
         alternativas: [
         {
-            texto: "a",
+            texto: "Irei introduzir o uso de algumas máquinas para processar meus produtos eficientemente",
             afirmacao: "afirmação",
         },
         {
-            texto: "b",
+            texto: "Irei optar pelo uso de minhas mãos somente, para evitar gastos desnecessários",
             afirmacao: "afirmação",
         }        
         ]
     },
-    {
-        enunciado: "enunciado 4",
-        alternativas: [
-        {
-            texto: "a",
-                afirmacao: "afirmação",
-        },
-        {
-            texto: "b",
-                afirmacao: "afirmação",
-        }        
-        ]
-    },
-    {
-        enunciado: "enunciado 5",
-        alternativas: [
-        {
-            texto: "a",
-            afirmacao: "afirmação",
-        },
-        {
-            texto: "b",
-            afirmacao: "afirmação",
-            }        
-        ]
-    },
+    
 ];
 
 let atual = 0;
@@ -104,9 +79,9 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "Em 2049...";
+    caixaPerguntas.textContent = "Você é um bom agricultor, obteve alternativas limpas para sua subsistência, com o mínimo de prejuizo ao meio ambiente. Parabens!";
     textoResultado.textContent = historiaFinal;
-    caixaAlternativas.textContent = "";
+    caixaAlternativas.textContent = "Você optou por lucros moderados, sem se preocupar muito com o meio ambiente, você é um pequeno empreendedor!";
 }
 
 mostraPergunta();
