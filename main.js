@@ -94,9 +94,9 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "Você é um bom agricultor, obteve alternativas limpas para sua subsistência, com o mínimo de prejuizo ao meio ambiente. Parabens!";
+    caixaPerguntas.textContent = "";
     textoResultado.textContent = historiaFinal;
-    caixaAlternativas.textContent = "Você optou por lucros moderados, sem se preocupar muito com o meio ambiente, você é um pequeno empreendedor!";
+    caixaAlternativas.textContent = "";
 }
 
 mostraPergunta();
