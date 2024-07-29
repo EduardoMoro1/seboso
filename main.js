@@ -10,11 +10,11 @@ const perguntas = [
         alternativas: [
         {
             texto: "Plantar vegetais para vender ou comer posteriormente",
-            afirmacao: "afirmação",
+            afirmacao: "Você pensa no futuro, quer promover um sustento básico antes de  tudo",
         },
         {
             texto: "Separar o espaço para o cultivo de animais",
-            afirmacao: "afirmação",
+            afirmacao: "Você pensa como um empreendedor, optou pelo caminho mais lucrativo",
         }        
         ]
     },
@@ -23,11 +23,11 @@ const perguntas = [
         alternativas: [
         {
             texto: "sim",
-            afirmacao: "afirmação",
+            afirmacao: "Você não se importa com o meio-ambiente ou o ambiente onde mora, apenas quer lucro sem esforço",
         },
         {
             texto: "não",
-            afirmacao: "afirmação",
+            afirmacao: "Você é um agricultor padrão, opta pela segurança do meio-ambiente",
         }        
         ]
     },
@@ -36,13 +36,28 @@ const perguntas = [
         alternativas: [
         {
             texto: "Irei introduzir o uso de algumas máquinas para processar meus produtos eficientemente",
-            afirmacao: "afirmação",
+            afirmacao: "Você é agora um empreendedor, seu lucro irá provavelmente aumentar muito, contudo, o meio-ambiente sofrerá com suas ações",
         },
         {
             texto: "Irei optar pelo uso de minhas mãos somente, para evitar gastos desnecessários",
-            afirmacao: "afirmação",
+            afirmacao: "Você quer apenas viver por viver, não quer lucro, apenas uma vida simples",
         }        
         ]
+    },
+    {
+        enunciado: "Você pretende ter uma vida simples ou pretende maximizar o lucro?",
+        alternativas: [
+        {
+            texto: "Vou ter uma vida simples, sem me preocupar com despesas ou maquinário",
+            afirmacao: "Você é um grande protetor do meio-ambiente, está preservando tudo do jeito correto e mantendo o ciclo",
+        },
+        {
+            texto: "Vou priorizar o lucro acima de tudo, independente das circunstâncias",
+            afirmacao: "Você é um grande inimigo do meio-ambiente, você não liga para a vegetação, mares, você apenas age sem pensar nos impactos de suas ações",
+        },
+            
+        ]
+
     },
     
 ];
