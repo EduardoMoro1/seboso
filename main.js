@@ -77,6 +77,12 @@ function mostraPergunta() {
     mostraAlternativas();
 }
 
+function mostraResultado() {
+    caixaPerguntas.textContent = "";
+    textoResultado.textContent = historiaFinal;
+    caixaAlternativas.textContent = "";
+}
+
 function mostraAlternativas(){
     for(const alternativa of perguntaAtual.alternativas) {
         const botaoAlternativas = document.createElement("button");
@@ -93,10 +99,5 @@ function respostaSelecionada(opcaoSelecionada) {
     mostraPergunta();
 }
 
-function mostraResultado() {
-    caixaPerguntas.textContent = "";
-    textoResultado.textContent = historiaFinal;
-    caixaAlternativas.textContent = "";
-}
 
 mostraPergunta();
