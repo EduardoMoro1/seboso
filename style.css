@@ -25,10 +25,8 @@
     padding: 20px;
 }
   
-h1{
-    font-size: 35px;
-    color: var(--cor-destaque);
-
+h1, .caixa-perguntas, .caixa-resultado{
+  font-family: 'Chakra Petch', sans-serif;
 }
 
 button {
@@ -51,4 +49,18 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.caixa-resultado{
+  display: none;
+}
+
+.caixa-resultado.mostrar{
+  display: block;
+}
+
+.caixa-alternativas{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
